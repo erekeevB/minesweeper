@@ -9,21 +9,23 @@
 
 }
 
-.element, .bomb {
+.element, .bomb, .zero_element {
 
     height: 100%;
     width: 100%;
-    background: gray;
+    background: white;
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
     display: grid;
     align-items: center;
     transform: scale(1);
     transition: all 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.308);
 
 }
 
-.bomb {
+.bomb.open {
 
     background: rgb(255, 63, 63);
 
@@ -32,4 +34,13 @@
 .element.open {
     background: rgb(255, 180, 255);
     transform: scale(0.9);
+    color: white;
+}
+
+.zero_element.open {
+
+    background: rgb(155, 155, 155);
+    transform: scale(0.9);
+    color: white;
+
 }
