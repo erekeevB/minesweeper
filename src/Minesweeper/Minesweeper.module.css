@@ -1,0 +1,35 @@
+.rows {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40px);
+    column-gap: 10px;
+    margin: 10px 0;
+    height: 40px;
+    justify-content: center;
+
+}
+
+.element, .bomb {
+
+    height: 100%;
+    width: 100%;
+    background: gray;
+    color: white;
+    font-size: 1rem;
+    display: grid;
+    align-items: center;
+    transform: scale(1);
+    transition: all 0.3s;
+
+}
+
+.bomb {
+
+    background: rgb(255, 63, 63);
+
+}
+
+.element.open {
+    background: rgb(255, 180, 255);
+    transform: scale(0.9);
+}
